@@ -1,0 +1,174 @@
+.is-parent {
+  padding: 0 !important;
+}
+
+.projects-tile {
+  /*height: 100vh;*/
+  /*overflow: scroll;*/
+}
+
+.skills1 {
+  /*background: #07889b;*/
+  background: #e37222 !important;
+}
+
+.skills2 {
+  /*background: #07889b;*/
+  background: #e37222 !important;
+}
+
+.tile.is-vertical > .tile.is-child:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+
+.picture-tile {
+  background: #f4f4f4;
+}
+
+.projects-container {
+  /*background: #eeaa7b;*/
+  background: #07889b;
+
+}
+
+.contact-container {
+  /*background: #66b9bf;*/
+  background: #07889b;
+  /*background: #eeaa7b;*/
+}
+
+.about-container {
+  background: #66b9bf;
+  /*background: #e37222 !important;*/
+}
+
+.title {
+  text-decoration: underline;
+  color: #f4f4f4 !important;
+}
+
+.subtitle {
+  color: #f4f4f4 !important;
+}
+
+.contact-info {
+  font-size: 1.25rem;
+  color: #f4f4f4 !important;
+}
+
+.name {
+  text-decoration: none;
+  color: #07889b !important;
+}
+
+article {
+  border-radius: 0 !important;
+}
+
+.modal-content {
+  width: 100% !important;
+}
+
+.skill-item {
+  font-size: 1.25rem;
+  color: #f4f4f4;
+}
+
+.quote {
+  font-size: 1.25rem;
+}
+
+.aboutme-container {
+  color: #f4f4f4;
+  font-size: 1.25rem;
+}
+
+.skills-container {
+  /*background: #07889b;*/
+  background: #e37222 !important;
+  padding-bottom: 0 !important;
+}
+
+div {
+  border-radius: 0 !important;
+}
+
+body {
+  height: 100vh;
+}
+
+.is-ancestor {
+  height: 100vh !important;
+  margin: 0 !important;
+}
+
+.project-parent {
+  height: 100vh !important;
+}
+
+.image-container {
+  max-width: 40%;
+  min-width: 40%;
+  margin: 5%;
+  margin-top: 0;
+  float: left;
+}
+
+img {
+  height: 300px;
+}
+
+.quote-tile {
+  background: #eeaa7b;
+}
+
+.quote {
+  color: #f4f4f4;
+  margin-top: 5%;
+}
+
+#jokebook-content {
+  visibility: hidden;
+  height: 300px;
+}
+
+#muzica-content {
+  visibility: hidden;
+  height: 300px;
+}
+
+#whatsup-content {
+  visibility: hidden;
+  height: 300px;
+}
+
+#tanks-content {
+  visibility: hidden;
+  height: 300px;
+}
+
+#pixelart-content {
+  visibility: hidden;
+  height: 300px;
+}
+
+.image-container {
+  background: white;
+  height: 300px;
+}
+
+.project-detail-container {
+  width: 80%;
+  margin: auto;
+}
+
+.close-button {
+  margin-right: 2%;
+  margin-top: 2%;
+  float: right;
+  width: inherit !important..;
+}
+
+.notification {
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem !important;
+}

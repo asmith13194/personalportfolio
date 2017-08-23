@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal Portfolio</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./animations.css">
+</head>
+<body>
+  <main class="center-align">
+    <div class="tile is-ancestor">
+
+      <div class="tile is-vertical is-12">
+        <div class="tile">
+          <div class="tile is-parent project-parent">
+            <div class="tile is-child notification skills1 expandUp">
+              <p class="title">Skills</p>
+              <ul>
+                <li class="skill-item">CSS</li>
+                <li class="skill-item">HTML</li>
+                <li class="skill-item">AJAX</li>
+                <li class="skill-item">Node.js</li>
+                <li class="skill-item">Knex.js</li>
+                <li class="skill-item">Heroku</li>
+                <li class="skill-item">Phaser.js</li>
+                <li class="skill-item">Bootstrap</li>
+                <li class="skill-item">Materialize</li>
+                <li class="skill-item">Google Maps</li>
+                <li class="skill-item">Web Sockets</li>
+                <li class="skill-item">UX/UI Design</li>
+                <li class="skill-item">Responsive Design</li>
+                <li class="skill-item">Object Oriented Programming</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tile is-vertical is-8">
+            <div class="tile">
+
+              <div class="tile is-parent">
+                <article class="tile is-child notification picture-tile fadeIn">
+                  <p class="title name">Adam Smith</p>
+                  <p class="subtitle name">Web Developer</p>
+                  <figure class="image is-4by4">
+                    <img src="./images/selfie.jpg">
+                  </figure>
+                  <!-- <p class="quote name">"Technology made large populations possible; large populations now make technology indispensable."</p> -->
+                </article>
+              </div>
+              <div class="tile is-vertical">
+
+                <div class="tile is-parent">
+                  <article class="tile is-child notification contact-container slideDown">
+                    <p class="title">Contact</p>
+                    <p class="content">
+                      <ul class="contact-list">
+                        <li class="contact-info">Asmith13194@gmail.com</li>
+                        <li class="contact-info">(630)346-0957</li>
+                        <li class="contact-info">Boulder, Co</li>
+                        <li class="contact-info"><a href="https://github.com/asmith13194">GitHub</a></li>
+                        <li class="contact-info"><a href="https://www.linkedin.com/in/adamsmith31/">LinkedIn</a></li>
+                      </ul>
+                    </p>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification quote-tile slideRight">
+                    <p class="quote">"Technology made large populations possible; large populations now make technology indispensable."</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification about-container hatch">
+                <p class="title">About Me</p>
+                <div class="content">
+                  <p class="aboutme-container">Fueled with tiger blood and driven by the thirst to leave a lasting mark on this world, I will do whatever it takes to make your business a sucess.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-vertical">
+            <div class="tile is-parent">
+              <article class="tile is-child notification projects-container">
+                  <p class="title">Projects</p>
+                  <p class="subtitle">Hover over a project for more details.</p>
+                  <div class="content">
+                    <div class="image-container">
+                      <img id="image-tanks" src="./images/tanks.png">
+                      <div id="tanks-content">
+                        <button id="tanks-close-button" class="close-button">X</button>
+                        <div id="tanks-project-detail-container" class="project-detail-container">
+                          <h4>Desktop Tanks</h4>
+                            <a href="HTTPS://DESKTOPTANKS.HEROKUAPP.COM/">HTTPS://DESKTOPTANKS.HEROKUAPP.COM/</a>
+                          <ul class="description">
+                            <li>Realtime multiplayer tank game</li>
+                            <li>Phaser.js for frontend game framework</li>
+                            <li>Sockets.io for client-server connection</li>
+                            <li>Piskelapp.com for sprites and animations</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-container">
+                      <img id="image-muzica" src="./images/muzica.png">
+                      <div id="muzica-content">
+                        <button id="muzica-close-button" class="close-button">X</button>
+                        <div id="muzica-project-detail-container" class="project-detail-container">
+                            <h4>Muzica</h4>
+                            <a href="HTTPS://MUZICA.HEROKUAPP.COM/">HTTPS://MUZICA.HEROKUAPP.COM/</a>
+                          <ul class="description">
+                            <li>Music service for sharing new work with version control</li>
+                            <li>SoundCloud API for streaming user tracks</li>
+                            <li>Node, Express, and Heroku for backend deployment</li>
+                            <li>Materialize CSS for animations and styling</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-container">
+                      <img id="image-whatsup" src="./images/whatsup.png">
+                      <div id="whatsup-content">
+                        <button id="whatsup-close-button" class="close-button">X</button>
+                        <div id="whatsup-project-detail-container" class="project-detail-container">
+                          <h4>WhatsUp</h4>
+                          <a href="HTTPS://ATOMBOMB-WHATSUP.SURGE.SH/">HTTPS://ATOMBOMB-WHATSUP.SURGE.SH/</a>
+                          <ul class="description">
+                            <li>Event app for finding nearby activities going on</li>
+                            <li>Google Maps API for location and display of events</li>
+                            <li>Eventful API to acquire nearby events</li>
+                            <li>Javascript to dynamically display marker and modals</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-container">
+                      <img id="image-pixelart" src="./images/pixelart.png">
+                      <div id="pixelart-content">
+                        <button id="pixelart-close-button" class="close-button">X</button>
+                        <div id="pixelart-project-detail-container" class="project-detail-container">
+                          <h4>Pixel Art Maker</h4>
+                          <a href="HTTPS://ONEBYONEPIXELART.SURGE.SH/">HTTPS://ONEBYONEPIXELART.SURGE.SH/</a>
+                          <ul class="description">
+                            <li>Digital pixel art maker, endless possibilities</li>
+                            <li>Javascript to dynamically create over a 1000 elements</li>
+                            <li>Event listeners to change color of pixels</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-container">
+                      <img id="image-jokebook" src="./images/jokebook.png">
+                      <div id="jokebook-content">
+                        <button id="jokebook-close-button" class="close-button">X</button>
+                        <div id="jokebook-project-detail-container" class="project-detail-container">
+                          <h4>Jokebook</h4>
+                          <a href="HTTPS://JOKEBOOK.HEROKUAPP.COM/">HTTPS://JOKEBOOK.HEROKUAPP.COM/</a>
+                          <ul class="description">
+                            <li>Social media app with post and comment  features</li>
+                            <li>PostgreSQL and Knex.js for the database and queries</li>
+                            <li>Materialize CSS for animations and styling</li>
+                            <li>JWT integration for secure signup and login</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </article>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Desktop Tanks</h4>
+          <a href="HTTPS://DESKTOPTANKS.HEROKUAPP.COM/">HTTPS://DESKTOPTANKS.HEROKUAPP.COM/</a>
+        <ul class="description">
+          <li>Realtime multiplayer tank game</li>
+          <li>Phaser.js for frontend game framework</li>
+          <li>Sockets.io for client-server connection</li>
+          <li>Piskelapp.com for sprites and animations</li>
+        </ul>
+        <img src="./images/tanks.png">
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4>Muzica</h4>
+          <a href="HTTPS://MUZICA.HEROKUAPP.COM/">HTTPS://MUZICA.HEROKUAPP.COM/</a>
+        <ul class="description">
+          <li>Music service for sharing new work with version control</li>
+          <li>SoundCloud API for streaming user tracks</li>
+          <li>Node, Express, and Heroku for backend deployment</li>
+          <li>Materialize CSS for animations and styling</li>
+        </ul>
+        <img src="./images/muzica.png">
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <h4>WhatsUp</h4>
+        <a href="HTTPS://ATOMBOMB-WHATSUP.SURGE.SH/">HTTPS://ATOMBOMB-WHATSUP.SURGE.SH/</a>
+        <ul class="description">
+          <li>Event app for finding nearby activities going on</li>
+          <li>Google Maps API for location and display of events</li>
+          <li>Eventful API to acquire nearby events</li>
+          <li>Javascript to dynamically display marker and modals</li>
+        </ul>
+        <img src="./images/whatsup.png">
+      </div>
+    </div>
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <h4>Pixel Art Maker</h4>
+        <a href="HTTPS://ONEBYONEPIXELART.SURGE.SH/">HTTPS://ONEBYONEPIXELART.SURGE.SH/</a>
+        <ul class="description">
+          <li>Digital pixel art maker, endless possibilities</li>
+          <li>Javascript to dynamically create over a 1000 elements</li>
+          <li>Event listeners to change color of pixels</li>
+        </ul>
+        <img src="./images/pixelart.png">
+      </div>
+    </div>
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <h4>Jokebook</h4>
+        <a href="HTTPS://JOKEBOOK.HEROKUAPP.COM/">HTTPS://JOKEBOOK.HEROKUAPP.COM/</a>
+        <ul class="description">
+          <li>Social media app with post and comment  features</li>
+          <li>PostgreSQL and Knex.js for the database and queries</li>
+          <li>Materialize CSS for animations and styling</li>
+          <li>JWT integration for secure signup and login</li>
+        </ul>
+        <img src="./images/jokebook.png">
+      </div>
+    </div> -->
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="project.js"></script>
+</body>
+
+</html>
