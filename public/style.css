@@ -1,5 +1,5 @@
 .is-parent {
-  padding: 0 !important;
+  padding: .25rem !important;
 }
 
 .projects-tile {
@@ -22,7 +22,8 @@
 }
 
 .picture-tile {
-  background: #f4f4f4;
+  /*background: #f4f4f4;*/
+  background: #222934;
 }
 
 .projects-container {
@@ -58,7 +59,7 @@
 
 .name {
   text-decoration: none;
-  color: #07889b !important;
+  color: #f4f4f4 !important;
 }
 
 article {
@@ -171,4 +172,7 @@ img {
 
 .notification {
   padding: 1.25rem 1.25rem 1.25rem 1.5rem !important;
+}
+.description {
+  margin-left: 0 !important;
 }
