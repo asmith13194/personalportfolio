@@ -59,4 +59,44 @@ $(document).ready(function(){
     $('#jokebook-content').removeClass('slideUp');
     $("#image-jokebook").css("display","inline")
   })
+  $('#quote').hover(function(){
+    $('.quote-tile').css('visibility','hidden')
+    $('.quote-tile').removeClass('slideLeft');
+    window.setTimeout(slideLeft,100);
+  },function(){})
+  function slideLeft(){
+    $('.quote-tile').addClass('slideLeft')
+  }
+  $('#skills-container').hover(function(){
+    $('.skills1').css('visibility','hidden')
+    $('.skills1').removeClass('expandUp');
+    window.setTimeout(expandUp,100);
+  },function(){})
+  function expandUp(){
+    $('.skills1').addClass('expandUp')
+  }
+  $('#about-container').hover(function(){
+    $('.about-container').css('visibility','hidden')
+    $('.about-container').removeClass('slideExpandUp');
+    window.setTimeout(slideExpandUp,100);
+  },function(){})
+  function slideExpandUp(){
+    $('.about-container').addClass('slideExpandUp')
+  }
+  $('#contact-container').hover(function(){
+    $('.contact-container').css('visibility','hidden')
+    $('.contact-container').removeClass('slideDown');
+    window.setTimeout(slideDown,100);
+  },function(){})
+  function slideDown(){
+    $('.contact-container').addClass('slideDown')
+  }
+  $('#picture-container').hover(function(){
+    $('.picture-tile').css('visibility','hidden')
+    $('.picture-tile').removeClass('fadeIn');
+    window.setTimeout(fadeIn,100);
+  },function(){})
+  function fadeIn(){
+    $('.picture-tile').addClass('fadeIn')
+  }
 });
