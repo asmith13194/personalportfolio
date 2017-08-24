@@ -16,9 +16,9 @@
       <div class="tile is-vertical is-12">
         <div class="tile">
           <div id="skills-container" class="tile is-parent project-parent">
-            <div class="tile is-child notification skills1 expandUp  z-depth-4">
-              <p class="title">Skills</p>
-              <ul>
+            <div class="tile is-child notification skills1 expandUp  z-depth-4 valign-wrapper">
+              <p id="skills-title" class="title fadeIn">Skills</p>
+              <ul id="skills-content">
                 <li class="skill-item">CSS</li>
                 <li class="skill-item">HTML</li>
                 <li class="skill-item">AJAX</li>
@@ -49,16 +49,16 @@
                   <p class="title name">Adam Smith</p>
                   <p class="subtitle name">Web Developer</p>
                   <figure class="image is-4by4">
-                    <img src="./images/selfie.png">
+                    <img id="selfie" src="./images/selfie.png">
                   </figure>
                 </article>
               </div>
               <div class="tile is-vertical">
                 <div id="contact-container" class="tile is-parent">
-                  <article class="tile is-child notification contact-container slideDown z-depth-4">
-                    <p class="title">Contact</p>
+                  <article class="tile is-child notification contact-container slideDown z-depth-4 valign-wrapper">
+                    <p id="contact-title" class="title">Contact</p>
                     <p class="content">
-                      <ul class="contact-list">
+                      <ul id="contact-content" class="contact-list">
                         <li class="contact-info">Asmith13194@gmail.com</li>
                         <li class="contact-info">(630)346-0957</li>
                         <li class="contact-info">Boulder, Co</li>
@@ -69,16 +69,16 @@
                   </article>
                 </div>
                 <div id="quote" class="tile is-parent">
-                  <article class="tile is-child notification quote-tile slideLeft z-depth-4">
-                    <p class="quote">"Technology made large populations possible; large populations now make technology indispensable."</p>
+                  <article class="tile is-child notification quote-tile slideLeft z-depth-4 valign-wrapper">
+                    <p id="quote-text" class="quote">"Technology made large populations possible; large populations now make technology indispensable."</p>
                   </article>
                 </div>
               </div>
             </div>
             <div id="about-container" class="tile is-parent">
-              <article class="tile is-child notification about-container slideExpandUp z-depth-4">
-                <p class="title">About Me</p>
-                <div class="content">
+              <article class="tile is-child notification about-container slideExpandUp z-depth-4 valign-wrapper">
+                <p id="about-title" class="title fadeIn">About Me</p>
+                <div id="about-content" class="content">
                   <p class="aboutme-container">Fueled with tiger blood and driven by the thirst to leave a lasting mark on this world, I will do whatever it takes to make your business a sucess. I have recently graduated from Galvanize in Boulder, Co completing their six month Web Development Immersive program. Now I am very excited about using the technologies I have learn and think with my diverse work background ranging from Firefighting to managing a liquor store that my skills will be a great addition to your team and company.</p>
                 </div>
               </article>
@@ -89,7 +89,7 @@
           <div class="tile is-parent">
             <article class="tile is-child notification projects-container hatch z-depth-4">
               <p class="title">Projects</p>
-              <p class="subtitle">Hover over a project for more details.</p>
+              <!-- <p class="subtitle">Hover over a project for more details.</p> -->
               <div class="content">
                 <div id="tanks-container" class="image-container z-depth-4">
                   <img id="image-tanks" src="./images/tanks.png">

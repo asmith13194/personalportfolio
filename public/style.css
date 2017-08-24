@@ -125,7 +125,6 @@ img {
 
 .quote {
   color: #f4f4f4;
-  margin-top: 5%;
 }
 
 #jokebook-content {
@@ -175,4 +174,32 @@ img {
 }
 .description {
   margin-left: 0 !important;
+}
+#about-content {
+  display: none;
+  visibility: hidden;
+}
+
+#skills-content {
+  display: none;
+  visibility: hidden;
+  margin: auto;
+}
+
+#contact-content {
+  display: none;
+  visibility: hidden;
+  margin: auto;
+}
+
+#contact-title {
+  margin: auto;
+}
+
+#about-title {
+  margin: auto;
+}
+
+#skills-title {
+  margin: auto;
 }
