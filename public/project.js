@@ -91,7 +91,7 @@ $(document).ready(function() {
       setTimeout(function() {
         changeQuote();
       }, 200)
-    }, 7000)
+    }, 10000)
   }
   $('#skills-container').mouseover(function() {
     $('#skills-container').removeClass('slideRight')
