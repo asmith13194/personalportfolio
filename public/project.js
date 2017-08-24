@@ -54,8 +54,15 @@ $(document).ready(function() {
     $('#jokebook-content').removeClass('slideExpandUp');
     $("#image-jokebook").css("display", "inline")
   })
+  let oldIndex = 0
   function getRandom(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
+    let newIndex = arr[Math.floor(Math.random() * arr.length)]
+    if(newIndex==oldIndex){
+      return getRandom(arr)
+    }else {
+      oldIndex = newIndex
+      return newIndex;
+    }
   }
   let quotesArr = [
     '"Science and technology revolutionize our lives, but memory, tradition and myth frame our response." - Arthur Schlesinger',
