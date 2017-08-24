@@ -113,6 +113,9 @@ body {
   margin: 5%;
   margin-top: 0;
   float: left;
+  background: white;
+  height: 300px;
+  visibility: hidden;
 }
 
 img {
@@ -149,11 +152,6 @@ img {
 
 #pixelart-content {
   visibility: hidden;
-  height: 300px;
-}
-
-.image-container {
-  background: white;
   height: 300px;
 }
 

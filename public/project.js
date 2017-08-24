@@ -131,13 +131,10 @@ $(document).ready(function(){
     $('#selfie').addClass('fadeIn')
   }
   $('#project-container').hover(function(){
-    // $('#project-content').css('display','inline');
     $('#project-title').css('visibility','hidden');
     $('#project-title').removeClass('hatch')
     $('.image-container').addClass('hatch');
   },function(){
-    // $('#project-title').css('display','inline')
-    // $('#project-content').css('display','none')
     $('#project-title').addClass('hatch')
     $('.image-container').removeClass('hatch');
   })
