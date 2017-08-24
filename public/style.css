@@ -49,14 +49,6 @@
   color: #f4f4f4 !important;
 }
 
-article {
-  border-radius: 0 !important;
-}
-
-.modal-content {
-  width: 100% !important;
-}
-
 .skill-item {
   font-size: 1.25rem;
   color: #f4f4f4;
@@ -72,26 +64,13 @@ article {
 }
 
 .skills-container {
-  /*background: #07889b;*/
   background: #e37222 !important;
   padding-bottom: 0 !important;
-}
-
-div {
-  border-radius: 0 !important;
-}
-
-body {
-  height: 100vh;
 }
 
 .is-ancestor {
   height: 100vh !important;
   margin: 0 !important;
-}
-
-.project-parent {
-  height: 100vh !important;
 }
 
 .image-container {
@@ -145,13 +124,6 @@ img {
 .project-detail-container {
   width: 80%;
   margin: auto;
-}
-
-.close-button {
-  margin-right: 2%;
-  margin-top: 2%;
-  float: right;
-  width: inherit !important..;
 }
 
 .notification {
