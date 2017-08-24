@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Personal Portfolio</title>
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
   <link rel="stylesheet" href="./animations.css">
 </head>
+
 <body>
   <main class="center-align">
     <div class="tile is-ancestor">
@@ -17,28 +19,30 @@
         <div class="tile">
           <div id="skills-container" class="tile is-parent project-parent">
             <div class="tile is-child notification skills1 expandUp  z-depth-4 valign-wrapper">
-              <p id="skills-title" class="title fadeIn">Skills</p>
-              <ul id="skills-content">
-                <li class="skill-item">CSS</li>
-                <li class="skill-item">HTML</li>
-                <li class="skill-item">AJAX</li>
-                <li class="skill-item">React</li>
-                <li class="skill-item">Heroku</li>
-                <li class="skill-item">Angular</li>
-                <li class="skill-item">Node.js</li>
-                <li class="skill-item">Knex.js</li>
-                <li class="skill-item">Phaser.js</li>
-                <li class="skill-item">Bootstrap</li>
-                <li class="skill-item">Javascript</li>
-                <li class="skill-item">Express.js</li>
-                <li class="skill-item">Materialize</li>
-                <li class="skill-item">PostgreSQL</li>
-                <li class="skill-item">Google Maps</li>
-                <li class="skill-item">Web Sockets</li>
-                <li class="skill-item">UX/UI Design</li>
-                <li class="skill-item">Responsive Design</li>
-                <li class="skill-item">Object Oriented Programming</li>
-              </ul>
+              <div class="skills-stuff">
+                <p id="skills-title" class="title fadeIn">Skills</p>
+                <ul id="skills-content">
+                  <li class="skill-item">CSS</li>
+                  <li class="skill-item">HTML</li>
+                  <li class="skill-item">AJAX</li>
+                  <li class="skill-item">React</li>
+                  <li class="skill-item">Heroku</li>
+                  <li class="skill-item">Angular</li>
+                  <li class="skill-item">Node.js</li>
+                  <li class="skill-item">Knex.js</li>
+                  <li class="skill-item">Phaser.js</li>
+                  <li class="skill-item">Bootstrap</li>
+                  <li class="skill-item">Javascript</li>
+                  <li class="skill-item">Express.js</li>
+                  <li class="skill-item">Materialize</li>
+                  <li class="skill-item">PostgreSQL</li>
+                  <li class="skill-item">Google Maps</li>
+                  <li class="skill-item">Web Sockets</li>
+                  <li class="skill-item">UX/UI Design</li>
+                  <li class="skill-item">Responsive Design</li>
+                  <li class="skill-item">Object Oriented Programming</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="tile is-vertical is-8">
@@ -54,17 +58,17 @@
               </div>
               <div class="tile is-vertical">
                 <div id="contact-container" class="tile is-parent">
-                  <article class="tile is-child notification contact-container slideDown z-depth-4 valign-wrapper">
-                    <p id="contact-title" class="title">Contact</p>
-                    <p class="content">
+                  <article id="contact-article" class="tile is-child notification contact-container slideDown z-depth-4 valign-wrapper">
+                    <div class="contact-stuff">
+                      <p id="contact-title" class="title fadeIn">Contact</p>
                       <ul id="contact-content" class="contact-list">
                         <li class="contact-info">Asmith13194@gmail.com</li>
-                        <li class="contact-info">(630)346-0957</li>
-                        <li class="contact-info">Boulder, Co</li>
+                        <li class="contact-info">(630) 346-0957</li>
+                        <li class="contact-info">Boulder, CO</li>
                         <li class="contact-info"><a href="https://github.com/asmith13194">GitHub</a></li>
                         <li class="contact-info"><a href="https://www.linkedin.com/in/adamsmith31/">LinkedIn</a></li>
                       </ul>
-                    </p>
+                    </div>
                   </article>
                 </div>
                 <div id="quote" class="tile is-parent">
@@ -76,9 +80,13 @@
             </div>
             <div id="about-container" class="tile is-parent">
               <article class="tile is-child notification about-container slideExpandUp z-depth-4 valign-wrapper">
-                <p id="about-title" class="title fadeIn">About Me</p>
-                <div id="about-content" class="content">
-                  <p class="aboutme-container">Fueled with tiger blood and driven by the thirst to leave a lasting mark on this world, I will do whatever it takes to make your business a success. I have recently graduated from Galvanize in Boulder, Co completing their six month Web Development Immersive program. Now I am very excited about using the technologies I have learned and think with my diverse work background ranging from Firefighting to managing a liquor store that my skills will be a great addition to your team and company.</p>
+                <div class="about-stuff">
+                  <p id="about-title" class="title fadeIn">About Me</p>
+                  <div id="about-content" class="content">
+                    <p class="aboutme-container">Fueled with tiger blood and driven by the thirst to leave a lasting mark on this world, I will do whatever it takes to make your business a success. I have recently graduated from Galvanize in Boulder, CO completing their six month
+                      Web Development Immersive program. Now I am very excited about using the technologies I have learned and think with my diverse work background ranging from Firefighting to managing a liquor store that my skills will be a great addition
+                      to your team and company.</p>
+                  </div>
                 </div>
               </article>
             </div>
@@ -91,10 +99,10 @@
               <div id="project-content" class="content">
                 <div id="tanks-container" class="image-container z-depth-4">
                   <img id="image-tanks" src="./images/tanks.png">
-                  <div id="tanks-content">
+                  <div id="tanks-content" class="valign-wrapper">
                     <div id="tanks-project-detail-container" class="project-detail-container">
                       <h4>Desktop Tanks</h4>
-                        <a href="HTTPS://DESKTOPTANKS.HEROKUAPP.COM/">HTTPS://DESKTOPTANKS.HEROKUAPP.COM/</a>
+                      <a href="HTTPS://DESKTOPTANKS.HEROKUAPP.COM/">HTTPS://DESKTOPTANKS.HEROKUAPP.COM/</a>
                       <ul class="description">
                         <li>Realtime multiplayer tank game</li>
                         <li>Phaser.js for frontend game framework</li>
@@ -106,7 +114,7 @@
                 </div>
                 <div id="muzica-container" class="image-container z-depth-4">
                   <img id="image-muzica" src="./images/muzica.png">
-                  <div id="muzica-content">
+                  <div id="muzica-content" class="valign-wrapper">
                     <div id="muzica-project-detail-container" class="project-detail-container">
                       <h4>Muzica</h4>
                       <a href="HTTPS://MUZICA.HEROKUAPP.COM/">HTTPS://MUZICA.HEROKUAPP.COM/</a>
@@ -121,7 +129,7 @@
                 </div>
                 <div id="whatsup-container" class="image-container z-depth-4">
                   <img id="image-whatsup" src="./images/whatsup.png">
-                  <div id="whatsup-content">
+                  <div id="whatsup-content" class="valign-wrapper">
                     <div id="whatsup-project-detail-container" class="project-detail-container">
                       <h4>WhatsUp</h4>
                       <a href="HTTPS://ATOMBOMB-WHATSUP.SURGE.SH/">HTTPS://ATOMBOMB-WHATSUP.SURGE.SH/</a>
@@ -136,7 +144,7 @@
                 </div>
                 <div id="pixelart-container" class="image-container z-depth-4">
                   <img id="image-pixelart" src="./images/pixelart.png">
-                  <div id="pixelart-content">
+                  <div id="pixelart-content" class="valign-wrapper">
                     <div id="pixelart-project-detail-container" class="project-detail-container">
                       <h4>Pixel Art Maker</h4>
                       <a href="HTTPS://ONEBYONEPIXELART.SURGE.SH/">HTTPS://ONEBYONEPIXELART.SURGE.SH/</a>
@@ -150,12 +158,12 @@
                 </div>
                 <div id="jokebook-container" class="image-container z-depth-4">
                   <img id="image-jokebook" src="./images/jokebook.png">
-                  <div id="jokebook-content">
+                  <div id="jokebook-content" class="valign-wrapper">
                     <div id="jokebook-project-detail-container" class="project-detail-container">
                       <h4>Jokebook</h4>
                       <a href="HTTPS://JOKEBOOK.HEROKUAPP.COM/">HTTPS://JOKEBOOK.HEROKUAPP.COM/</a>
                       <ul class="description">
-                        <li>Social media app with post and comment  features</li>
+                        <li>Social media app with post and comment features</li>
                         <li>PostgreSQL and Knex.js for the database and queries</li>
                         <li>Materialize CSS for animations and styling</li>
                         <li>JWT integration for secure signup and login</li>
@@ -174,4 +182,5 @@
   <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src="project.js"></script>
 </body>
+
 </html>
