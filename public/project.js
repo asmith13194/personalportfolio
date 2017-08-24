@@ -7,7 +7,6 @@ $(document).ready(function(){
   },function(){
     $('#tanks-content').css('visibility','hidden');
     $(".project-detail-container").css('visibility','hidden')
-    $(".close-button").css('visibility','hidden')
     $('#tanks-content').removeClass('slideExpandUp');
     $("#image-tanks").css("display","inline")
   })
@@ -19,7 +18,6 @@ $(document).ready(function(){
   },function(){
     $('#muzica-content').css('visibility','hidden');
     $(".project-detail-container").css('visibility','hidden')
-    $(".close-button").css('visibility','hidden')
     $('#muzica-content').removeClass('slideExpandUp');
     $("#image-muzica").css("display","inline")
   })
@@ -31,7 +29,6 @@ $(document).ready(function(){
   },function(){
     $('#whatsup-content').css('visibility','hidden');
     $(".project-detail-container").css('visibility','hidden')
-    $(".close-button").css('visibility','hidden')
     $('#whatsup-content').removeClass('slideExpandUp');
     $("#image-whatsup").css("display","inline")
   })
@@ -43,7 +40,6 @@ $(document).ready(function(){
   },function(){
     $('#pixelart-content').css('visibility','hidden');
     $(".project-detail-container").css('visibility','hidden')
-    $(".close-button").css('visibility','hidden')
     $('#pixelart-content').removeClass('slideExpandUp');
     $("#image-pixelart").css("display","inline")
   })
@@ -55,29 +51,33 @@ $(document).ready(function(){
   },function(){
     $('#jokebook-content').css('visibility','none');
     $(".project-detail-container").css('visibility','hidden')
-    $(".close-button").css('visibility','hidden')
     $('#jokebook-content').removeClass('slideExpandUp');
     $("#image-jokebook").css("display","inline")
   })
-  $('#quote').hover(function(){
-    $('#quote-text').css('visibility','hidden')
-    $('#quote-text').removeClass('slideLeft');
-    window.setTimeout(slideLeft,100);
-  },function(){})
-  function slideLeft(){
-    $('#quote-text').addClass('slideLeft')
+  function getRandom(arr){
+    return arr[Math.floor(Math.random()*arr.length)];
   }
+  let quotesArr = ['"Science and technology revolutionize our lives, but memory, tradition and myth frame our response." - Arthur Schlesinger','"The art challenges the technology, and the technology inspires the art." - John Lasseter','"If we continue to develop our technology without wisdom or prudence, our servant may prove to be our executioner." - Omar Bradley','"The real danger is not that computers will begin to think like men, but that men will begin to think like computers." - Sydney Harris','"This is the whole point of technology.  It creates an appetite for immortality on the one hand.  It threatens universal extinction on the other. Technology is lust removed from nature." - Don DeLillo','"Technology made large populations possible; large populations now make technology indispensable." - Joseph Krutch','"We are stuck with technology when what we really want is just stuff that works." - Douglas Adams','"The great myth of our times is that technology is communication." - Libby Larsen','"I think that novels that leave out technology misrepresent life as badly as Victorians misrepresented life by leaving out sex." - Kurt Vonnegut','"The human spirit must prevail over technology." - Albert Einstein','"You cannot endow even the best machine with initiative; the jolliest steamroller will not plant flowers." - Walter Lippmann','"Humanity is acquiring all the right technology for all the wrong reasons." - R. Buckminster Fuller','"Technology is a word that describes something that doesn’t work yet." - Douglas Adams','"One machine can do the work of fifty ordinary men.  No machine can do the work of one extraordinary man." - Elbert Hubbard','"It has become appallingly obvious that our technology has exceeded our humanity." - Albert Einstein','"Just because something doesn’t do what you planned it to do doesn’t mean it’s useless." - Thomas Edison','"All of the biggest technological inventions created by man - the airplane, the automobile, the computer - says little about his intelligence, but speaks volumes about his laziness." - Mark Kennedy','"Any sufficiently advanced technology is equivalent to magic." - Arthur C. Clarke','"Technology is anything that wasn’t around when you were born." - Alan Kay']
+  setTimeout(function(){
+    changeQuote()
+  }, 7000);
+   function changeQuote(){
+    let randomQuote = getRandom(quotesArr);
+    $('#quote-text').html(randomQuote);
+    $('#quote-text').css('visibility','hidden');
+    $('#quote-text').addClass('slideLeft');
+    setTimeout(function(){
+      $('#quote-text').removeClass('slideLeft');
+      setTimeout(function(){
+        changeQuote();
+      },200)
+    },7000)
+   }
   $('#skills-container').hover(function(){
     $('#skills-title').css('display','none')
     $('#skills-title').removeClass('fadeIn')
     $('#skills-content').css('display','inline')
     $('#skills-content').addClass('slideRight');
-    // $('#skills-title').css('visibility','hidden')
-    // $('#skills-title').removeClass('fadeIn')
-    // $('#skills-content').addClass('slideRight');
-    // $('.skills1').css('visibility','hidden')
-    // $('.skills1').removeClass('expandUp');
-    // window.setTimeout(expandUp,100);
   },function(){
     $('#skills-content').removeClass('slideExpandUp')
     $('#skills-content').css('visibility','hidden')
@@ -85,9 +85,6 @@ $(document).ready(function(){
     $('#skills-title').css('display','inline')
     $('#skills-title').css('visibility','hidden')
     $('#skills-title').addClass('fadeIn')
-    // $('#skills-content').removeClass('slideRight')
-    // $('#skills-content').css('visibility','hidden')
-    // $('#skills-title').addClass('fadeIn')
   })
   function expandUp(){
     $('.skills1').addClass('expandUp')
@@ -114,12 +111,6 @@ $(document).ready(function(){
     $('#contact-title').removeClass('fadeIn')
     $('#contact-content').css('display','inline')
     $('#contact-content').addClass('slideDown');
-    // $('#contact-title').css('visibility','hidden')
-    // $('#contact-title').removeClass('fadeIn')
-    // $('#contact-content').addClass('slideDown');
-    // $('.contact-container').css('visibility','hidden')
-    // $('.contact-container').removeClass('slideDown');
-    // window.setTimeout(slideDown,100);
   },function(){
     $('#contact-content').removeClass('slideDown')
     $('#contact-content').css('visibility','hidden')
@@ -134,11 +125,20 @@ $(document).ready(function(){
   $('#picture-container').hover(function(){
     $('#selfie').css('visibility','hidden');
     $('#selfie').removeClass('fadeIn')
-    // $('.picture-tile').css('visibility','hidden')
-    // $('.picture-tile').removeClass('fadeIn');
     window.setTimeout(fadeIn,100);
   },function(){})
   function fadeIn(){
     $('#selfie').addClass('fadeIn')
   }
+  $('#project-container').hover(function(){
+    // $('#project-content').css('display','inline');
+    $('#project-title').css('visibility','hidden');
+    $('#project-title').removeClass('hatch')
+    $('.image-container').addClass('hatch');
+  },function(){
+    // $('#project-title').css('display','inline')
+    // $('#project-content').css('display','none')
+    $('#project-title').addClass('hatch')
+    $('.image-container').removeClass('hatch');
+  })
 });
